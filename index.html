@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- START:: UTF8 -->
+    <meta charset="UTF-8">
+    <!-- START::  AUTHOR -->
+    <meta name="author" content="AhMeD EL-AwaDy">
+    <!-- START:: ROBOTS -->
+    <meta name="robots" content="index/follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- START:: VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- START:: HANDHELFRIENDLY -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- START:: DESCRIPTION -->
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit">
+    <!-- START:: KEYWORD -->
+    <meta name="keyword"
+        content="agency, business, corporate, creative, freelancer, minimal, modern, personal, portfolio, responsive, simple, cartoon">
+    <!-- START:: THEME COLOR -->
+    <meta name="theme-color" content="#212121">
+    <!-- START:: THEME COLOR IN MOBILE -->
+    <meta name="msapplication-navbutton-color" content="#15264B">
+    <!-- START:: THEME COLOR IN MOBILE -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#15264B">
+    <!-- START:: TITLE -->
+    <title>SAP - Home</title>
+    <!-- START:: FAVICON -->
+    <link rel="shortcut icon" type="image/svg" href="assets/images/logo/logo.svg">
+    <!-- START:: STYLE LIBRARIES -->
+
+    <!-- START:: BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <!-- START:: FANCY BOX -->
+    <link rel="stylesheet" href="assets/css/fancyBox/fancy.css">
+    <!-- START:: OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+    <!-- START:: ANIMATE -->
+    <link rel="stylesheet" href="assets/css/animate/animate.css">
+    <!-- START:: FONT AWSOME -->
+    <link rel="stylesheet" href="assets/css/font-awsome/all.css">
+    <!-- START:: CUSTOM STYLE -->
+    <link rel="stylesheet" href="assets/css/custom/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/custom/style-rtl.css" /> -->
+
+    <!-- END:: STYLE LIBRARIES -->
+</head>
+
+<body>
+    <!-- START:: LOADER -->
+    <div class="loader" id="page_loader">
+        <div class="loader3">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- END:: LOADER -->
+
+    <!-- START:: HEADER -->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <!-- LOGO -->
+                <div class="logo_site">
+                    <img src="./assets/images/logo/logo.svg" alt="Logo" width="" height="" />
+                </div>
+                <!-- LOGO -->
+
+                <!-- MAIN MENU -->
+                <nav>
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="./all-courses.html">Courses</a></li>
+                        <li><a href="./our-tracks.html">Tracks</a></li>
+                        
+                    </ul>
+                </nav>
+                <!-- MAIN MENU -->
+
+                <!-- SIGN IN AND PROFILE -->
+                <div class="profile_dropwdown_menu">
+                    <button type="button" class="btn_sign_in btn-animation-3" data-bs-toggle="modal"
+                        data-bs-target="#authModal">
+                        LOGIN
+                    </button>
+                </div>
+                <!-- SIGN IN AND PROFILE -->
+
+                <!-- START:: MOBILE NAV -->
+                <button type="button" class="btn_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="side_menu_mobile">
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="./all-courses.html">Courses</a></li>
+                        <li><a href="./our-tracks.html">Tracks</a></li>
+                        
+                    </ul>
+                    <button type="button" class="btn_sign_in btn-animation-3 w-100" data-bs-toggle="modal"
+                        data-bs-target="#authModal">
+                        LOGIN
+                    </button>
+                </div>
+                <div class="OverLaySideMenu"></div>
+                <!-- START:: MOBILE NAV -->
+
+            </div>
+        </div>
+    </header>
+    <!-- END:: HEADER -->
+
+    <!-- START:: MODAL AUTH -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="authModal" tabindex="-1"
+        aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form role="alert" action="./index-with-auth.html?" autocomplete="on" class="custom-form">
+                        <div class="title_form">
+                            <h4>LOGIN</h4>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <span class="icon_input"><img src="./assets/images/icons/email.svg" alt=""></span>
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" />
+                        </div>
+                        <div class="mb-3 form-group input_password">
+                            <span class="icon_input"><img src="./assets/images/icons/key.svg" alt=""></span>
+                            <input type="password" name="password" class="form-control" id="password"
+                                placeholder="Password">
+                            <div class="show_hide" onclick="password_show_hide();">
+                                <span id="show_eye">Show</span>
+                                <span id="hide_eye">Hide</span>
+                            </div>
+                        </div>
+                        <div class="submit-form">
+                            <button class="btn-animation-2">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END:: MODAL AUTH -->
+
+    <!-- START:: SLIDER HERO SECTION -->
+    <section class="hero_section">
+        <div id="particles-js"></div>
+
+        <div class="container">
+            <!-- SLIDER -->
+            <div id="heroSectionSlider" class="owl-carousel owl-theme">
+                <!-- START:: SINGLE ITEM -->
+                <div class="item">
+                    <h1> SECURITY AWARNESS </h1>
+                    <h2>PLATFORM</h2>
+                </div>
+                <!-- END:: SINGLE ITEM -->
+
+                <!-- START:: SINGLE ITEM -->
+                <div class="item">
+                    <h1> SECURITY AWARNESS </h1>
+                    <h2>PLATFORM</h2>
+                </div>
+                <!-- END:: SINGLE ITEM -->
+
+
+                <!-- START:: SINGLE ITEM -->
+                <div class="item">
+                    <h1> SECURITY AWARNESS </h1>
+                    <h2>PLATFORM</h2>
+                </div>
+                <!-- END:: SINGLE ITEM -->
+
+
+                <!-- START:: SINGLE ITEM -->
+                <div class="item">
+                    <h1> SECURITY AWARNESS </h1>
+                    <h2>PLATFORM</h2>
+                </div>
+                <!-- END:: SINGLE ITEM -->
+            </div>
+            <!-- SLIDER -->
+        </div>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="social_media_icons">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Whatsapp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- SOCIAL MEDIA -->
+    </section>
+    <!-- END:: SLIDER HERO SECTION -->
+
+    <!-- START:: WHY CHOOSE US -->
+    <section class="why_choose_us">
+        <div class="container">
+
+            <!-- START:: TITLE SECTION -->
+            <div class="title_section">
+                <h3>Why Choose Us</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <!-- END:: TITLE SECTION -->
+
+            <!-- STRAT:: CONTENT -->
+            <div class="items_why_choose row">
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <div class="single_item_choose">
+                        <span>
+                            <i class="far fa-user"></i>
+                        </span>
+                        <h4>Text Can Change Here</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <div class="single_item_choose">
+                        <span>
+                            <i class="far fa-user"></i>
+                        </span>
+                        <h4>Text Can Change Here</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <div class="single_item_choose">
+                        <span>
+                            <i class="far fa-user"></i>
+                        </span>
+                        <h4>Text Can Change Here</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- SINGLE ITEM -->
+
+            </div>
+            <!-- END:: CONTENT -->
+
+        </div>
+    </section>
+    <!-- END:: WHY CHOOSE US -->
+
+
+    <!-- START:: OUR TRACKS -->
+    <section class="our_tracks">
+        <div class="container">
+
+            <!-- START:: TITLE SECTION -->
+            <div class="title_section">
+                <h3>Our Tracks</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <!-- END:: TITLE SECTION -->
+
+            <!-- START:: CONTENT -->
+            <div class="items_tracks row">
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+                <!-- SINGLE ITEM -->
+                <div class="col-md-4">
+                    <a href="#" class="single_item_track">
+                        <span>
+                            <i class="far fa-play-circle"></i>
+                        </span>
+                        <div class="text_track">
+                            <h4>Website Development</h4>
+                            <p>230+ Courses</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SINGLE ITEM -->
+
+            </div>
+            <!-- END:: CONTENT -->
+
+            <div class="btn_show_more">
+                <a href="./our-tracks.html" class="btn-animation-2">
+                    View More
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END:: OUR TRACKS -->
+
+    <!-- START:: OUR COURSES -->
+    <section class="our_courses">
+        <div class="container">
+
+            <!-- START:: TITLE SECTION -->
+            <div class="title_section">
+                <h3>Our Courses</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <!-- END:: TITLE SECTION -->
+
+            <!-- START:: CONTENT-->
+            <div class="items_courses row">
+
+                <!-- SINGLE COURSE -->
+                <div class="col-md-3">
+                    <div class="single_item_course">
+                        <div class="image">
+                            <img src="./assets/images/all/courses.jpg" alt="COURSE IMAGE" width="" height="" />
+                        </div>
+                        <div class="rate_category">
+                            <span><a href="#">Website Development</a></span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                4.5
+                            </strong>
+                        </div>
+                        <div class="title">
+                            <h6><a href="./single-course.html">Red Hat Cyber Security & Hat ERP</a></h6>
+                        </div>
+                        <div class="time_lecture">
+                            <span>
+                                <i class="far fa-play-circle"></i>
+                                Lecture
+                            </span>
+                            <span>
+                                <i class="far fa-clock"></i>
+                                12 h & 45 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SINGLE COURSE -->
+
+                <!-- SINGLE COURSE -->
+                <div class="col-md-3">
+                    <div class="single_item_course">
+                        <div class="image">
+                            <img src="./assets/images/all/courses.jpg" alt="COURSE IMAGE" width="" height="" />
+                        </div>
+                        <div class="rate_category">
+                            <span><a href="#">Website Development</a></span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                4.5
+                            </strong>
+                        </div>
+                        <div class="title">
+                            <h6><a href="./single-course.html">Red Hat Cyber Security & Hat ERP</a></h6>
+                        </div>
+                        <div class="time_lecture">
+                            <span>
+                                <i class="far fa-play-circle"></i>
+                                Lecture
+                            </span>
+                            <span>
+                                <i class="far fa-clock"></i>
+                                12 h & 45 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SINGLE COURSE -->
+
+                <!-- SINGLE COURSE -->
+                <div class="col-md-3">
+                    <div class="single_item_course">
+                        <div class="image">
+                            <img src="./assets/images/all/courses.jpg" alt="COURSE IMAGE" width="" height="" />
+                        </div>
+                        <div class="rate_category">
+                            <span><a href="#">Website Development</a></span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                4.5
+                            </strong>
+                        </div>
+                        <div class="title">
+                            <h6><a href="./single-course.html">Red Hat Cyber Security & Hat ERP</a></h6>
+                        </div>
+                        <div class="time_lecture">
+                            <span>
+                                <i class="far fa-play-circle"></i>
+                                Lecture
+                            </span>
+                            <span>
+                                <i class="far fa-clock"></i>
+                                12 h & 45 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SINGLE COURSE -->
+
+                <!-- SINGLE COURSE -->
+                <div class="col-md-3">
+                    <div class="single_item_course">
+                        <div class="image">
+                            <img src="./assets/images/all/courses.jpg" alt="COURSE IMAGE" width="" height="" />
+                        </div>
+                        <div class="rate_category">
+                            <span><a href="#">Website Development</a></span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                4.5
+                            </strong>
+                        </div>
+                        <div class="title">
+                            <h6><a href="./single-course.html">Red Hat Cyber Security & Hat ERP</a></h6>
+                        </div>
+                        <div class="time_lecture">
+                            <span>
+                                <i class="far fa-play-circle"></i>
+                                Lecture
+                            </span>
+                            <span>
+                                <i class="far fa-clock"></i>
+                                12 h & 45 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SINGLE COURSE -->
+
+            </div>
+            <!-- END::  CONTENT-->
+
+            <div class="btn_show_more">
+                <a href="./all-courses.html" class="btn-animation-2">
+                    View More
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- END:: OUR COURSES -->
+
+    <!-- START:: NEWS LEATTER -->
+    <div class="container">
+        <section class="newsletter">
+            <!-- START:: TITLE SECTION -->
+            <div class="title_section">
+                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                <p>Praesent vehicula aliquam volutpat. Mauris vel mi odio. Duis vel egestas felis.</p>
+            </div>
+            <!-- END:: TITLE SECTION -->
+
+            <!-- START:: FORM SUBSCRIBE -->
+            <form action="#">
+                <input type="email" class="form-control" placeholder="Email Address">
+                <button class="btn-animation-2">SUBSCRIBE</button>
+            </form>
+            <!-- END:: FORM SUBSCRIBE -->
+        </section>
+    </div>
+    <!-- END:: NEWS LEATTER -->
+
+    <!-- START:: FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <div class="about_footer">
+                        <img src="./assets/images/logo/logo.svg" alt="LOGO" />
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam molestias
+                            voluptates veniam laboriosam sint odit impedit sit, ea id?
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="links_footer">
+                                <div class="title_foter">
+                                    <h6>ABOUT US</h6>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">How it works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="links_footer">
+                                <div class="title_foter">
+                                    <h6>ABOUT US</h6>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">How it works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="links_footer">
+                                <div class="title_foter">
+                                    <h6>ABOUT US</h6>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">How it works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyrights">
+                <p>Copyright 2022 SAP@gmail.com</p>
+                <p>Created by <a href="#">AhMeD EL-AwaDy</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- END:: FOOTER -->
+
+
+    <!-- START:: INCLUDING SCRIPTS -->
+
+    <!-- START:: JQUERY -->
+    <script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
+    <!-- START:: BOOTSTRAP -->
+    <script src="assets/js/bootstrap/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- START:: FANCY BOX -->
+    <script src="assets/js/fancybox/fancy.js"></script>
+    <!-- START:: OWL CAROUSEL -->
+    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+    <!-- START:: FONT AWSOME -->
+    <script src="assets/js/font-awsome/all.js"></script>
+    <!-- START:: ANIMATE -->
+    <script src="assets/js/animate/wow.min.js"></script>
+    <!-- START:: CUSTOM JS -->
+    <script src="assets/js/particles/particles.js"></script>
+    <script src="assets/js/custom/main.js"></script>
+    <!-- START::  -->
+    <script>
+        /* ---- particles.js config ---- */
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#0c4e62"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.3,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.2,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 0
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+
+        /* ---- stats.js config ---- */
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+/* ***************************************************
+** Theme Name: SAP
+** Theme URI: https://
+** Description: 
+** Author: Ahmed EL-AwaDy
+** Author URI: https://www.facebook.com/ahmed.el3awady
+** Author Mobile: ( +2 ) 01020403283
+** Version: 1.0
+****************************************************** */
+
+:root {
+  --light-font-ar: "Roboto-Light";
+  --medium-font-ar: "Roboto-Medium";
+  --bold-font-ar: "Roboto-Bold";
+  --cre: "cre";
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(232, 232, 232);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(185, 24, 71);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: var(--gradient-color);
+}
+
+button {
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: 0px;
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../../fonts/ar/Tajawal-Light.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../../fonts/ar/Tajawal-Medium.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../../fonts/ar/Tajawal-Bold.ttf");
+}
+
+@font-face {
+  font-family: cre;
+  src: url("../../fonts/cre.otf");
+}
+
+::selection {
+  background: rgba(166, 175, 189, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  vertical-align: baseline;
+  transition: all 0.3s ease-in-out 0s;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--light-blue-color);
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  opacity: 1 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0px;
+}
+
+input[type="number"] {
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  direction: rtl;
+}
+
+/* START */
+.modal-body .custom-form .input_password .show_hide{
+  right: inherit;
+  left: 0;
+}
+.hero_section .social_media_icons{
+  left: inherit;
+  right: 3rem;
+}
+.hero_section #heroSectionSlider .owl-dots{
+  right: inherit;
+  left: 0;
+}
+.owl-carousel{
+  direction: ltr;
+}
+.hero_section .social_media_icons ul li a span{
+  left: inherit;
+  right: 40px;
+}
+.hero_section .social_media_icons ul li a:hover span{
+  left: inherit;
+  right: 50px;
+}
+.hero_section .social_media_icons ul li a span::before {
+  content: "";
+  border-right: 0;
+  border-left: 28px solid rgb(255, 255, 255);
+  position: absolute;
+  left: inherit;
+  right: -2px;
+  transform: rotate(15deg);
+}
+.title_pages.side_bar_title h2::after {
+  left: inherit;
+  right: 0px;
+}
+.head_page_single_course .breadcrums ul li i{
+  transform: rotateY(180deg);
+}
+.videos_container .videos_list .title_list{
+  right: inherit;
+  left: 0;
+}
+.videos_container .videos_list.videos_list_show ul{
+  right: inherit;
+  left: 0;
+}
+.videos_container .videos_list ul{
+  right: inherit;
+  left: -500px;
+}
+#close_button{
+  right: 15px;
+  left: inherit;
+}
+#download_button {
+  right: 60px;
+  left: inherit;
+}
+
+.videos_container .videos_list .title_list button i {
+  transform: rotateY(180deg);
+}
+.body_page_single_course .custom_collapse ul li .content::before {
+  left: inherit;
+  right: 1rem;
+}
+.title_contact::after, footer .links_footer .title_foter h6::after{
+  left: inherit;
+  right: 0px;
+}
+.form-select {
+  background-position: left 0.75rem center;
+}
